@@ -1,0 +1,194 @@
+
+{  "navbar":{
+    "home": "Home",
+    "partner": "Partner",
+    "aboutUs": "About Us",
+    "login": "Log In",
+    "logout": "Logout",
+    "changePassword": "Change Password"
+},
+
+
+  "homepage":{   
+    "mainline": "EXPLORE.PLAY.IMPACT",
+    "mainline2":"This is the future of impact. Dive in and play your part!",
+    "enterbutton":"Enter World Of Impact",
+    "accessbutton":"Access World of Impact",
+    "loading":"Loading..."
+  },
+
+    "footer":
+    {
+    "home":"Home",
+    "partner": "Partner",
+    "aboutUs": "About Us",
+    "terms": "Terms And Condition",
+    "subscribe":" Subscribe",
+    "copyright":"© Copyright Impactoverse 2024",
+    "email":"Enter Your Email"
+    },
+    
+    "age":{
+      "authentication":"Authentication",
+      "subtitle":"Proceed and access our platform.",
+      "checkbox":" Are you 13 years or older?",
+      "subtitle2":"If you are under 13, please enter the",
+      "login": "or Log In with",
+      "access":"Access code." ,
+      "proceedToLogin": "Proceed to Login / Signup" ,
+      "whyAge":"Why the Age Limit?",
+      "agelimit":"We require users to be at least 13 years old to ensure compliance with child online privacy regulations. This helps protect the safety and privacy of younger users. Thank you for understanding!"
+    },
+    "auth":
+    {
+      "authentication":"Authentication",
+      "accessCode":"Please enter the Access code.",
+      "thankyou":"Thank you for confirming your age.",
+      "proceed":"To proceed, enter the code provided by your school or institution.",
+      "mainAccess":"Enter Your Main Access Code",
+      "secondaryAcces":"Enter Your Secondary Access Code",
+      "yes":"Yes",
+      "orLogin":"or Log In with",
+      "whyAccess":"Why Access Code?",
+      "why":"Since users under the age of 13 require parental or institutional authorization, the access code will be provided to them by their respective school or institution. This process ensures secure and compliant access in line with privacy and safety guidelines."
+    },
+
+    "login":{
+      "headline":"Log In",
+      "subtitle":"Jump into Impact." ,
+      "email":"Email*",
+      "emailPlaceholder":"Enter Your Email",
+      "password":"Password*",
+      "passwordPlaceholder":"Enter Your Password",
+      "forgot":"Forget Password?",
+      "login":"Log In",
+      "loggingIn":"Logging in...",
+      "register":" Register",
+      "loginWith":"or Log In with"
+    },
+
+    "register":{
+      "headline":"Registration",
+      "subtitle":"Login to Innovate. Engage. Act.",
+      "uName":"User Name",
+      "uNamePlaceholder":"Enter Your User Name",
+      "email":"Email",
+      "emailPlaceholder":"Enter Your Email",
+      "password":"Create Password",
+      "passwordPlaceholder":"Create Your Password",
+      "register":"Register",
+      "login":"Log In",
+      "loginWith":"or Log In with",
+      "pleaseEnterOtp":"Please enter the OTP sent to your email to complete registration",
+      "registerationFailed":"Registration failed: No session token received",
+      "emailVerified":"Email verified successfully! Redirecting to login...",
+      "otpResent":"OTP resent successfully! Please check your email.",
+      "otpFailed":"Failed to resend OTP."
+
+    },
+    
+      "terms": {
+        "privacyPolicy": {
+          "title": "Privacy Policy",
+          "mainTitle": "Privacy Policy Overview",
+          "content": "The following document governs and details the Privacy Policy of Impactoverse, which is our web-based digital marketplace for Impact DOTs, marketing and campaign driving platform among other features. On our website, the privacy of all of our users, customers, and other members is protected and respected. This policy has been drafted in order to declare our website’s data protection and data collection practices by explaining specifically how we protect users’ data, and what measures have been taken in order to be in compliance with different local and global privacy laws. This policy is written for all the users, gamers, and members and (herein collectively will be called “users”) to understand how our website (“we”, “our”, and “Impactoverse”) uses, collects, shares, and protects users’ information and data. We request our users to read this privacy policy statement before using our website and services. The users of our website’s services will be assumed to be in agreement with our privacy statement after we have published this Privacy Policy on/through our website."
+        },
+        "dataCollection": {
+          "title": "Collection of Data",
+          "content": "Our website collects information that is necessary for the purpose of delivering our products and services. Personal information includes (but is not limited to) the full name and e-mail, age along with other data (processed automatically) of the user. The information which will be collected in this process will be used to provide services to the user as well as in order to communicate with that user through e-mail and/or telephone. Further details about data collection methods and the types of information gathered may be found within our website’s full privacy policy document."
+        },
+        "userInformationCollection": {
+          "title": "Users Information Collection",
+          "content": "There will be a collection of information from all of our users when they create an account on our website if they use any of our services. The information provided to us includes but is not limited to:",
+          "list": [
+            "Full Name",
+            "Email address",
+            "Address (If a user wants to run a fundraising campaign for an organization, we will collect address and references as well).",
+            "Users Google or Facebook credentials (if the user opts in using these services).",
+            "Users Third-Party Related Information",
+            "Impact DOTs and Polygon Related Information of the User",
+            "Any additional information relating to the users that they provide directly through our website or indirectly through our platform or online presence, such as 'cookies'.",
+            "If they want to run a fundraising campaign, we will verify the address, identity, organization information, and references. We use Stripe, which has its own verification process and collects card details; we don’t store credit or debit card information."
+          ]
+        },
+        "automaticInformationCollection": {
+          "title": "Automatic Information Collection",
+          "content": "Our website will also collect specific and general information through website add-ons and plugins for the purpose of rendering normal services. This includes (but is not limited to) the usage of our services by users, referring nodes, device OS and its type, language and its preference, and date and time of users’ browsing history.",
+          "note": "Please note that none of the information collected from users will be sold. However, to improve our services, we may use the information in aggregate form, ensuring the privacy of individual users remains intact. We may share such aggregated information with third-party service providers."
+        },
+        "cookiePolicy": {
+          "title": "Use of Cookies",
+          "title2": "We primarily use cookies to:",
+          "typesOfCookies":"Types of Cookies",
+          "disclaimer":" Please note that cookies do not contain any personal identifying information. Users can also change their browser settings to disable the collection of cookies. However, disabling cookies may make many of our services ineffectual.",
+          "disclaimer2":"Third-party tracking and analytical services may be present on our website, including Google Analytics, which helps us track session activity, bounce rate, and general traffic analytics. These links support our services and may not be affiliated with us.",
+          "thirdParty":"Third-Party Services Used",
+          "content": "Our website uses, collects, and stores cookies on users’ devices. This cookie policy is written according to privacy rights and user rights policies. We are informing our customers that their data may be collected, and they can contact us if they wish to have their data removed. A cookie is a log file that collects certain information and is stored on the user's or visitor’s device or personal computer. This information will be provided back to the device if the user or visitor makes a return visit. The most common types of cookies are session cookies and permanent cookies.",
+          "types": {
+            "session": "Session cookies are temporary cookies that are deleted once the user exits the browser.",
+            "permanent": "Permanent cookies remain in the user’s or visitor’s browser until they are either deleted by the user or expire on their own."
+          },
+          "uses": [
+            "Understand how visitors are arriving at our website.",
+            "Monitor the usage of our website visitors and traffic.",
+            "Remember when a user last visited our website and, if the cookie persists, continue that user’s session from the last time.",
+            "Store analytical cookies for tracking and analysis purposes.",
+            "Track user behavior for marketing purposes.",
+            "Facilitate error reporting.",
+            "Support customer services."
+          ]
+        },
+        "thirdPartyLinks": {
+          "title": "Third-Party Links",
+          "content": "We rely on third-party platforms to render our services, primarily for storing and hosting our data. Please note that we may switch to alternative platforms if we find better options. Apart from sharing some of our data with third-party platform partners, we will not share, lease, or sell any personal user information to a third party (unless required by law).",
+          
+          "services": [
+            "Google Analytics for tracking website activities.",
+            "Stripe for payment processing.",
+            "Engagebay for subscriptions, sales, and customer care."
+          ],
+          "note": "We do not collect or store information gathered by these services. Users' personal data remains secure, and we are not responsible for any unauthorized data use by third-party platforms."
+        }
+      },
+      "aboutUs": {
+      "headline":"About Impactoverse",
+      "subtitle":"Empowering Change Together.",
+      "focusArea":"Our Focus Area",
+      "engagement":"Engagement",
+      "engagementNote":"Fostering active participation to spark meaningful discussions and build a supportive community for positive social impact.",
+      "awareness":"Awareness",
+      "awarenessNote":"Providing insights and information to empower individuals with knowledge about societal challenges and opportunities for change.",
+      "connection":"Connection",
+      "connectionNote":"Bringing people together to create networks that inspire collaboration and collective efforts for a better future.",
+      "action":"Action",
+      "actionNote":"Encouraging tangible steps and initiatives to turn awareness into impactful change for the community and beyond.",
+      "getInvolved":"Get Involved",
+      "ourMission":"Our Mission",
+      "ourMissionNote":"To pioneer innovative uses of technology that engage, educate, inspire and empower global citizens to address pressing environmental and social challenges collectively.",
+      "ourVision":"Our Vision",
+      "vision1":"To create a platform at the intersection of profit and purpose where technology and creativity converge to drive real-world positive outcomes for people, the planet, and impact-aligned organizations.",
+      "vision2":"To build a transformative platform where innovation and empathy unite, empowering individuals, organizations, and communities to achieve sustainable growth and meaningful impact for a better future.",
+      "advisor":"Meet Our Advisors",
+      "joinOurMission":"Join Our Mission"
+      
+    },
+    "forgotPassword":{
+      "heading":"Forgot Password",
+      "subtitle":"Reset your password and regain access.",
+      "email":"Email",
+      "sendOtp":"Send OTP",
+      "otpSent":"An OTP has been sent to your email.",
+      "error":"Error sending OTP:",
+      "otpFailed":"Failed to send OTP. Please try again.",
+      "otp":"OTP",
+      "newPassword":"New Password",
+      "reset":"Reset Password",
+      "resendOtp":" Resend OTP",
+      "success":"Success!",
+      "successSubtitle":"Your password has been reset. You can now log in with your new password.",
+      "login":"Go to Login"
+    }
+    }
+    
+  
+  

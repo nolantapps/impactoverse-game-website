@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Unity WebGL Player | Impactoverse</title>
+  <link rel="shortcut icon" href="TemplateData/favicon.ico">
+  <link rel="stylesheet" href="TemplateData/style.css">
+  <!-- Include the DataStore.js script as a module -->
+  <script type="module">
+    import DataStore from '../../src/components/DataStore.js'; // Adjusted for absolute path or changed to .js
+    window.DataStore = DataStore;
+    window.dataStoreLoaded = true;
+  </script>
+  <style>
+    /* Ensuring the container and canvas are full screen with no borders or padding */
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      height: 100%;
+    }
+    #unity-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black; /* Optional: set a black background */
+    }
+    #unity-canvas {
+      width: 100%;
+      height: 100%;
+      border: none;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+    #unity-footer {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+ 
+  <div id="unity-container" class="unity-desktop">
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+    <div id="unity-loading-bar">
+      <div id="unity-logo"></div>
+      <div id="unity-progress-bar-empty">
+        <div id="unity-progress-bar-full"></div>
+      </div>
+    </div>
+    <div id="unity-warning"></div>
+    <div id="unity-footer">
+      <div id="unity-webgl-logo"></div>
+      <div id="unity-fullscreen-button"></div>
+      <div id="unity-build-title">Impactoverse</div>
+    </div>
+  </div>
+  <script>
+    var container = document.querySelector("#unity-container");
+    var canvas = document.querySelector("#unity-canvas");
+    var loadingBar = document.querySelector("#unity-loading-bar");
+    var progressBarFull = document.querySelector("#unity-progress-bar-full");
+    var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+    var warningBanner = document.querySelector("#unity-warning");
+
+    function unityShowBanner(msg, type) {
+      function updateBannerVisibility() {
+        warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+      }
+      var div = document.createElement('div');
+      div.innerHTML = msg;
+      warningBanner.appendChild(div);
+      if (type === 'error') div.style = 'background: red; padding: 10px;';
+      else {
+        if (type === 'warning') div.style = 'background: yellow; padding: 10px;';
+        setTimeout(() => {
+          warningBanner.removeChild(div);
+          updateBannerVisibility();
+        }, 5000);
+      }
+      updateBannerVisibility();
+    }
+
+    var buildUrl = "Build";
+    var loaderUrl = buildUrl + "/Build.loader.js";
+    var config = {
+      dataUrl: buildUrl + "/Build.data.gz",
+      frameworkUrl: buildUrl + "/Build.framework.js.gz",
+      codeUrl: buildUrl + "/Build.wasm.gz",
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: "DefaultCompany",
+      productName: "Impactoverse",
+      productVersion: "0.1",
+      showBanner: unityShowBanner,
+    };
+
+    loadingBar.style.display = "block";
+
+    var script = document.createElement("script");
+    script.src = loaderUrl;
+    script.onload = () => {
+      createUnityInstance(canvas, config, (progress) => {
+        progressBarFull.style.width = 100 * progress + "%";
+      }).then((instance) => {
+        console.log("Unity Instance Created");
+        loadingBar.style.display = "none";
+        window.unityInstance = instance;
+        fullscreenButton.onclick = () => {
+          unityInstance.SetFullscreen(1);
+        };
+        
+        // Function to attempt calling sendDataToUnity
+        function attemptSendDataToUnity() {
+          // if (window.dataStoreLoaded && window.DataStore && typeof window.DataStore.sendDataToUnity === 'function') {
+          //   console.log("Calling sendDataToUnity");
+          //   window.DataStore.sendDataToUnity();
+          // } else {
+          //   console.log("DataStore not ready, retrying in 100ms");
+          //   setTimeout(attemptSendDataToUnity, 100);
+          // }
+          displayName = null;
+          token = null;
+         displayName = sessionStorage.getItem('displayName');
+          console.log(displayName);
+      
+          token = sessionStorage.getItem('token');
+          console.log(token);
+          window.unityInstance.SendMessage(
+          "DataReciever",  // Unity GameObject name (ensure it matches in Unity)
+          "ReceiveData",   // Unity method to call (ensure it matches Unity method name)
+          JSON.stringify({ displayName, token }) // Data to send as a JSON string
+        );
+        }
+        
+        // Start attempting to call sendDataToUnity
+        attemptSendDataToUnity();
+      }).catch((message) => {
+        alert(message);
+      });
+    };
+    document.body.appendChild(script);
+  </script>
+</body>
+</html>
