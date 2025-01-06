@@ -116,11 +116,11 @@ const AgeVerification = () => {
           </Link>
         </p>
 
-        <div className="flex items-center space-x-4 mt-4">
+        {/* <div className="flex items-center space-x-4 mt-4">
           <div className={`flex-1 border-t ${dividerLineClasses}`}></div>
           <p className={`${dividerTextClasses} text-sm`}>{t('age.login')}</p>
           <div className={`flex-1 border-t ${dividerLineClasses}`}></div>
-        </div>
+        </div> */}
 
         <div className="flex justify-center mt-4">
           <img 
