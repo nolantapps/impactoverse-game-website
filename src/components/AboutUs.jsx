@@ -5,7 +5,7 @@ import { useTheme } from './ThemeContext';
 import { useTranslation } from 'react-i18next';  // Import useTranslation
 import './i18n';
 const AboutUs = () => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   const { isDarkMode } = useTheme();
 
   return (
@@ -13,7 +13,7 @@ const AboutUs = () => {
       {/* Top Section with Title and Image */}
       <div className="relative flex flex-col items-left pt-16 px-6 md:px-16 lg:px-32">
         <h1 className={`text-7xl font-bold ${isDarkMode ? 'text-white' : 'text-[#333]'}`}>
-        {t('aboutUs.headline')}
+          {t('aboutUs.headline')}
         </h1>
         <p className="text-2xl mt-2">{t('aboutUs.subtitle')}</p>
         <img
@@ -26,7 +26,7 @@ const AboutUs = () => {
       {/* Focus Area Section */}
       <div className="mt-24 px-6 md:px-16 lg:px-32 text-center">
         <h2 className={`text-6xl font-bold ${isDarkMode ? 'text-white' : 'text-[#333]'}`}>
-        {t('aboutUs.focusArea')}
+          {t('aboutUs.focusArea')}
         </h2>
         {/* <div className="text-2xl flex flex-col md:flex-row justify-start mt-8 space-y-4 md:space-y-0 md:space-x-6">
           {['Engagement', 'Awareness', 'Connection', 'Action'].map((area, index) => (
@@ -39,33 +39,33 @@ const AboutUs = () => {
           ))}
         </div> */}
         <div className="text-2xl flex flex-col md:flex-row justify-start mt-8 space-y-4 md:space-y-0 md:space-x-6">
-  <div className="space-y-2">
-    <h3 className="font-semibold">{t('aboutUs.engagement')}</h3>
-    <p className="text-sm">
-    {t('aboutUs.engagementNote')}
-    </p>
-  </div>
-  <div className="space-y-2">
-    <h3 className="font-semibold">{t('aboutUs.awareness')}</h3>
-    <p className="text-sm">
-    {t('aboutUs.engagementNote')}
-    </p>
-  </div>
-  <div className="space-y-2">
-    <h3 className="font-semibold">{t('aboutUs.connection')}</h3>
-    <p className="text-sm">
-    {t('aboutUs.connectionNote')}
-    </p>
-  </div>
-  <div className="space-y-2">
-    <h3 className="font-semibold">{t('aboutUs.action')}</h3>
-    <p className="text-sm">
-    {t('aboutUs.actionNote')}
-    </p>
-  </div>
-</div>
+          <div className="space-y-2">
+            <h3 className="font-semibold">{t('aboutUs.engagement')}</h3>
+            <p className="text-sm">
+              {t('aboutUs.engagementNote')}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-semibold">{t('aboutUs.awareness')}</h3>
+            <p className="text-sm">
+              {t('aboutUs.engagementNote')}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-semibold">{t('aboutUs.connection')}</h3>
+            <p className="text-sm">
+              {t('aboutUs.connectionNote')}
+            </p>
+          </div>
+          <div className="space-y-2">
+            <h3 className="font-semibold">{t('aboutUs.action')}</h3>
+            <p className="text-sm">
+              {t('aboutUs.actionNote')}
+            </p>
+          </div>
+        </div>
         <button className={`mt-6 px-8 py-3 rounded-full ${isDarkMode ? 'bg-indigo-600 text-white' : 'bg-indigo-600 text-white'} hover:bg-indigo-700`}>
-        {t('aboutUs.getInvolved')}
+          {t('aboutUs.getInvolved')}
         </button>
       </div>
 
@@ -75,7 +75,7 @@ const AboutUs = () => {
           <div className="pt-60 pl-10 bg-gradient-to-b from-transparent text-white">
             <h2 className="text-3xl font-bold">  {t('aboutUs.ourMission')}</h2>
             <p className="mt-2 text-lg">
-            {t('aboutUs.ourMissionNote')}
+              {t('aboutUs.ourMissionNote')}
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const AboutUs = () => {
       {/* Vision Section */}
       <div className="mt-24 px-6 md:px-16 lg:px-32 text-center">
         <h2 className={`text-6xl font-bold ${isDarkMode ? 'text-white' : 'text-[#333]'}`}>
-        {t('aboutUs.ourVision')}
+          {t('aboutUs.ourVision')}
         </h2>
         {/* <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
           {[1, 2].map((num) => (
@@ -99,30 +99,29 @@ const AboutUs = () => {
           ))}
         </div> */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-  <div className={`${isDarkMode ? 'bg-[#2E2E3E] text-gray-200' : 'bg-gray-100 text-[#333]'} rounded-lg p-6 space-y-4`}>
-    <img src="/pictures/1.png" alt="Vision 1" className="w-full h-40 object-cover rounded" />
-    <h3 className="font-semibold">
-    {t('aboutUs.vision1')}
-    </h3>
-  </div>
-  <div className={`${isDarkMode ? 'bg-[#2E2E3E] text-gray-200' : 'bg-gray-100 text-[#333]'} rounded-lg p-6 space-y-4`}>
-    <img src="/pictures/2.png" alt="Vision 2" className="w-full h-40 object-cover rounded" />
-    <h3 className="font-semibold">
-    {t('aboutUs.vision2')}
-    </h3>
-  </div>
-</div>
+          {
+            ['aboutUs.vision1','aboutUs.vision2'].map((item, index) => (
+              <div className={`${isDarkMode ? 'bg-[#2E2E3E] text-gray-200' : 'bg-gray-100 text-[#333]'} rounded-lg p-6 space-y-4 w-4/6 justify-self-center`}>
+                <img src={`/pictures/${(index+1)}.png`} alt="Vision 2" className="w-full h-40 object-cover rounded" />
+                <h3 className="font-semibold">
+                  {t(item)}
+                </h3>
+              </div>
+            ))
+          }
+
+        </div>
       </div>
 
       {/* Advisors Section */}
       <div className="mt-24 px-6 md:px-16 lg:px-32 text-center">
         <h2 className={`text-6xl font-bold ${isDarkMode ? 'text-white' : 'text-[#333]'}`}>
-        {t('aboutUs.advisor')}
+          {t('aboutUs.advisor')}
         </h2>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
           {['advisor1', 'advisor2', 'advisor3', 'advisor4', 'advisor5', 'advisor6'].map((advisor, index) => (
-            <div key={index} className={`${isDarkMode ? 'bg-[#2E2E3E] text-gray-200' : 'bg-gray-100 text-[#333]'} rounded-lg p-6 space-y-4`}>
-              <img src={`/pictures/${advisor}.png`} alt={`Advisor ${index + 1}`} className="w-full h-40 object-cover rounded" />
+            <div key={index} className={`${isDarkMode ? 'bg-[#2E2E3E] text-gray-200' : 'bg-gray-100 text-[#333]'} rounded-lg p-6 space-y-4 w-2/3 justify-self-center`}>
+              <img src={`/pictures/${advisor}.png`} alt={`Advisor ${index + 1}`} className="w-40 h-40 object-cover rounded-full justify-self-center" />
               <h3 className="font-semibold">{['Priya Guliani', 'Noleen Mariappen', 'Kala Philo', 'Dr. Reginald Parker', 'Karina Murray', 'Mike Johns'][index]}</h3>
               <p className="text-sm">{['EMEA Regional Director, GBA', 'Founder & CEO', 'Editor, TechRenews Newsletter', 'Founder - Optimal Tech', 'Founder & CEO, Aunua Global', 'CEO, Digital Mind State'][index]}</p>
             </div>
@@ -134,7 +133,7 @@ const AboutUs = () => {
       <div className="mt-24 flex justify-center pb-16">
         <Link to='/'>
           <button className={`px-8 py-3 rounded-full ${isDarkMode ? 'bg-indigo-600 text-white' : 'bg-indigo-600 text-white'} hover:bg-indigo-700`}>
-          {t('aboutUs.joinOurMission')}
+            {t('aboutUs.joinOurMission')}
           </button>
         </Link>
       </div>

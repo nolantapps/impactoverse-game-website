@@ -11,7 +11,7 @@ const DataStore = {
     this.token = newToken;
     this.storeInSessionStorage('token', newToken); // Store token in sessionStorage
     this.storeInCookies('token', newToken);  //store token in cookies
-    console.log(this.token + " new Token Received");
+    //console.log(this.token + " new Token Received");
     
   },
 
@@ -19,14 +19,14 @@ const DataStore = {
     this.email = newEmail;
     this.storeInSessionStorage('email', newEmail); // Store email in sessionStorage
     this.storeInCookies('email', newEmail); // Store in cookies
-    console.log(this.email + " new Email Received");
+    //console.log(this.email + " new Email Received");
   },
 
   setDisplayName(newDisplayName) {
     this.displayName = newDisplayName;
     this.storeInSessionStorage('displayName', newDisplayName); // Store displayName in sessionStorage
     this.storeInCookies('displayName', newDisplayName); // Store in cookies
-    console.log(this.displayName + " new Display Name Received");
+    //console.log(this.displayName + " new Display Name Received");
   },
 
   // Helper methods to store and retrieve from both storages

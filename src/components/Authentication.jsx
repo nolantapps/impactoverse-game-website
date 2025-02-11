@@ -3,11 +3,14 @@ import { FaGoogle, FaFacebook, FaInfoCircle, FaTimes } from 'react-icons/fa';
 import { useTheme } from './ThemeContext'; // Import the theme context
 import { useNavigate } from 'react-router-dom'; // To handle navigation
 import  datastore from './DataStore';
+import { Spinner } from 'react-activity';
+import "react-activity/dist/library.css";
 import { useTranslation } from 'react-i18next';  // Import useTranslation
 import './i18n';
 const Authentication = () => {
   const {t} = useTranslation();
   const [isVisible, setIsVisible] = useState(true);
+  const [loading,setLoading] = useState(false);
   const [showInfoPopup, setShowInfoPopup] = useState(false);
   const [mainAccessCode, setMainAccessCode] = useState('');
   const [secondaryAccessCode, setSecondaryAccessCode] = useState('');
@@ -26,40 +29,37 @@ const Authentication = () => {
 
   const handleAuthentication = async () => {
     try {
-      console.log(mainAccessCode),
-      console.log(secondaryAccessCode);
-      const response = await fetch('https://impactoversefunctionapp.azurewebsites.net/api/GetAccessCode?code=H2CDZZ1lFT_zWfShjHsF9eQ7euYccg138idg5305by57AzFuQ__HDQ%3D%3D', {
+      setLoading(true)
+      const response = await fetch(`${import.meta.env.VITE_BASEURL}/auth/loginWithCode`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        
-      
         body: JSON.stringify({
-          MainAccessCode: mainAccessCode,
-          SecondaryAccessCode: secondaryAccessCode,
+          primary: mainAccessCode,
+          secondary: secondaryAccessCode,
         }),
       });
 
       if (!response.ok) {
+        setLoading(false)
         throw new Error('Invalid codes or server error');
       }
 
-     
+        const data = await response.json();
 
-    
+     
+        datastore.setToken(data.token);
+        datastore.setEmail(data.email);
+        datastore.setDisplayName(data.displayName);
        
-        datastore.setToken('213xaskmfdkann44321f');
-        datastore.setEmail('lorem@gmail.com');
-        datastore.setDisplayName(mainAccessCode);
-       
-        sessionStorage.setItem('isChild',"true")
-        console.log(response.id);
+        sessionStorage.setItem('isChild',"true");
         // setSuccessMessage("Login successful! Redirecting...");
         setErrorMessage("");
         navigate('/');
       
     } catch (error) {
+      setLoading(false)
       setErrorMessage(error.message || 'An unexpected error occurred.'); 
     }
    
@@ -121,12 +121,17 @@ const Authentication = () => {
             {errorMessage && (
               <p className="text-red-500 text-center text-sm mt-2">{errorMessage}</p>
             )}
+            
 
             <button
               onClick={handleAuthentication}
               className={`w-full mt-6 py-3 rounded-lg font-semibold ${isDarkMode ? 'bg-indigo-600 hover:bg-indigo-700 text-white' : 'bg-indigo-600 hover:bg-indigo-700 text-white'} transition-colors duration-300`}
             >
-              {t('auth.yes')}
+              {
+                loading?
+                <Spinner size={20} color='white' style={{justifySelf:"center"}}/>:
+                t('auth.yes')
+              }
             </button>
 
             {/* <div className="flex items-center space-x-4 mt-8">
