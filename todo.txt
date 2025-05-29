@@ -1,0 +1,20 @@
+streamline all the options , if they have a game, they have custom options for their own game.
+
+if they dont have any game, they to be shown a base space.
+
+Reporting is per Game not overall
+
+Users is under game page.
+
+instead of
+
+
+Game play profile -> Players
+Owned Games Page
+
+
+Pararell space depending on who issued the access codes
+
+
+access code ask for username if the user is new to the space
+stage 2 
