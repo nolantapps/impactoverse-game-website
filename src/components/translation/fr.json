@@ -1,0 +1,197 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "map":"Carte",
+    "sponsorships":"Parrainer",
+    "pricing":"Tarification",
+    "partner": "Partenaire",
+    "aboutUs": "À propos de nous",
+    "login": "Se connecter",
+    "logout": "Se déconnecter",
+    "changePassword": "Changer le mot de passe",
+    "dashboard": "Tableau de bord"
+  },
+  "modal": {
+    "redirect": "Redirection",
+    "redirect_warning": "Il semble que vous n'ayez pas d'avatar.",
+    "redirect_message": "Redirection vers la sélection de votre avatar dans "
+  },
+  "homepage": {
+    "mainline": "EXPLORER. JOUER. IMPACTER.",
+    "mainline2": "C'est l'avenir de l'impact. Plongez et jouez votre rôle !",
+    "enterbutton": "Entrez dans le Monde de l'Impact",
+    "accessbutton": "Accédez au Monde de l'Impact",
+    "loading": "Chargement..."
+  },
+
+  "footer": {
+    "home": "Accueil",
+    "partner": "Partenaire",
+    "aboutUs": "À Propos de Nous",
+    "terms": "Termes et Conditions",
+    "subscribe": "s'abonner",
+    "copyright": "© droit d'auteur",
+    "email": "Entrez votre e-mail"
+  },
+
+  "age": {
+    "authentication": "Authentification",
+    "subtitle": "Procédez et accédez à notre plateforme.",
+    "checkbox": "Avez-vous 13 ans ou plus ?",
+    "checkbox2":"Avez-vous 16 ans ou plus ?",
+    "subtitle2": "Si vous avez moins de 13 ans, veuillez entrer le",
+    "subtitle3":"Si vous avez moins de 16 ans, veuillez entrer le",
+    "login": "ou Connectez-vous avec",
+    "access": "Code d'accès.",
+    "proceedToLogin": "Procédez à la connexion/inscription",
+    "whyAge": "Pourquoi la limite d'âge ?",
+    "agelimit": "Nous exigeons que les utilisateurs aient au moins 13 ans pour garantir le respect des réglementations sur la confidentialité en ligne des enfants. Cela aide à protéger la sécurité et la confidentialité des utilisateurs plus jeunes. Merci de votre compréhension !",
+    "agelimit2": "Nous exigeons une seconde vérification de l'âge pour les utilisateurs âgés de 13 à 16 ans. Merci de votre compréhension !"
+  },
+  "auth": {
+    "authentication": "Authentification",
+    "accessCode": "Veuillez entrer le code d'accès.",
+    "thankyou": "Merci d'avoir confirmé votre âge.",
+    "proceed": "Pour continuer, entrez le code fourni par votre école ou institution.",
+    "mainAccess": "Entrez votre code d'accès principal",
+    "secondaryAcces": "Entrez votre code d'accès secondaire",
+    "yes": "Oui",
+    "orLogin": "ou Connectez-vous avec",
+    "whyAccess": "Pourquoi le code d'accès ?",
+    "why": "Étant donné que les utilisateurs de moins de 13 ans nécessitent une autorisation parentale ou institutionnelle, le code d'accès leur sera fourni par leur école ou institution respective. Ce processus garantit un accès sécurisé et conforme aux directives de confidentialité et de sécurité.",
+    "why2": "Étant donné que les utilisateurs de moins de 16 ans nécessitent une autorisation parentale ou institutionnelle, le code d'accès leur sera fourni par leur école ou institution respective. Ce processus garantit un accès sécurisé et conforme aux directives de confidentialité et de sécurité."
+  },
+  "login": {
+    "headline": "Se connecter",
+    "subtitle": "Plongez dans l'Impact.",
+    "email": "Email*",
+    "emailPlaceholder": "Entrez votre email",
+    "password": "Mot de passe*",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "forgot": "Mot de passe oublié ?",
+    "login": "Se connecter",
+    "loggingIn": "Connexion en cours...",
+    "register": "S'inscrire",
+    "loginWith": "ou Connectez-vous avec"
+  },
+  "register": {
+    "headline": "Inscription",
+    "subtitle": "Connectez-vous pour innover. Engagez-vous. Agissez.",
+    "firstName": "Prénom",
+    "firstNamePlaceholder": "Entrez votre prénom",
+    "lastName": "Nom de famille",
+    "surnamePlaceholder": "Entrez votre nom de famille",
+    "uName": "Nom d'utilisateur",
+    "uNamePlaceholder": "Entrez votre nom d'utilisateur",
+    "email": "Email",
+    "emailPlaceholder": "Entrez votre email",
+    "password": "Créer un mot de passe",
+    "passwordPlaceholder": "Créez votre mot de passe",
+    "register": "S'inscrire",
+    "registering":"S'inscrire...",
+    "login": "Se connecter",
+    "loginWith": "ou Connectez-vous avec",
+    "pleaseEnterOtp": "Veuillez entrer l'OTP envoyé à votre email pour compléter l'inscription",
+    "registerationFailed": "Échec de l'inscription : Aucun jeton de session reçu",
+    "emailVerified": "Email vérifié avec succès ! Redirection vers la connexion...",
+    "otpResent": "OTP renvoyé avec succès ! Veuillez vérifier votre email.",
+    "otpFailed": "Échec de l'envoi de l'OTP."
+  },
+
+  "terms": {
+    "privacyPolicy": {
+      "title": "Politique de Confidentialité",
+      "mainTitle": "Aperçu de la Politique de Confidentialité",
+      "content": "Le document suivant régit et détaille la Politique de Confidentialité d'Impactoverse, qui est notre place de marché numérique basée sur le web pour les Impact DOTs, la plateforme de marketing et de campagnes, entre autres fonctionnalités. Sur notre site web, la confidentialité de tous nos utilisateurs, clients et autres membres est protégée et respectée. Cette politique a été rédigée pour déclarer nos pratiques de protection des données et de collecte des données en expliquant spécifiquement comment nous protégeons les données des utilisateurs, et quelles mesures ont été prises pour être en conformité avec les différentes lois locales et mondiales sur la confidentialité. Cette politique est rédigée pour tous les utilisateurs, joueurs et membres et (ci-après collectivement appelés « utilisateurs ») afin qu'ils comprennent comment notre site web (« nous », « notre », et « Impactoverse ») utilise, collecte, partage et protège les informations et les données des utilisateurs. Nous demandons à nos utilisateurs de lire cette déclaration de confidentialité avant d'utiliser notre site web et nos services. Les utilisateurs des services de notre site web seront supposés être d'accord avec notre déclaration de confidentialité après la publication de cette politique de confidentialité sur/notre site web."
+    },
+    "dataCollection": {
+      "title": "Collecte de Données",
+      "content": "Notre site web collecte des informations nécessaires à la fourniture de nos produits et services. Les informations personnelles incluent (mais ne se limitent pas à) le nom complet, l'e-mail, l'âge ainsi que d'autres données (traitées automatiquement) de l'utilisateur. Les informations collectées dans ce processus seront utilisées pour fournir des services à l'utilisateur ainsi que pour communiquer avec cet utilisateur par e-mail et/ou téléphone. D'autres détails sur les méthodes de collecte des données et les types d'informations recueillies peuvent être trouvés dans le document complet de la politique de confidentialité de notre site web."
+    },
+    "userInformationCollection": {
+      "title": "Collecte d'Informations Utilisateurs",
+      "content": "Nous collecterons des informations auprès de tous nos utilisateurs lorsqu'ils créeront un compte sur notre site web ou utiliseront nos services. Les informations fournies à notre sujet comprennent, mais ne sont pas limitées à :",
+      "list": [
+        "Nom complet",
+        "Adresse e-mail",
+        "Adresse (Si un utilisateur souhaite lancer une campagne de financement pour une organisation, nous collecterons également l'adresse et les références).",
+        "Identifiants Google ou Facebook des utilisateurs (si l'utilisateur choisit d'utiliser ces services).",
+        "Informations liées aux tiers des utilisateurs",
+        "Informations relatives aux Impact DOTs et Polygon de l'utilisateur",
+        "Toutes informations supplémentaires relatives aux utilisateurs qu'ils fournissent directement par le biais de notre site web ou indirectement via notre plateforme ou présence en ligne, telles que les 'cookies'.",
+        "S'ils souhaitent lancer une campagne de financement, nous vérifierons l'adresse, l'identité, les informations de l'organisation et les références. Nous utilisons Stripe, qui a son propre processus de vérification et collecte les informations de carte ; nous ne stockons pas les informations de carte de crédit ou de débit."
+      ]
+    },
+    "automaticInformationCollection": {
+      "title": "Collecte Automatique d'Informations",
+      "content": "Notre site web collectera également des informations spécifiques et générales via des modules complémentaires et des plugins pour fournir des services normaux. Cela inclut (mais ne se limite pas à) l'utilisation de nos services par les utilisateurs, les nœuds de référence, le système d'exploitation du périphérique et son type, la langue et ses préférences, ainsi que la date et l'heure de l'historique de navigation des utilisateurs.",
+      "note": "Veuillez noter qu'aucune des informations collectées auprès des utilisateurs ne sera vendue. Cependant, pour améliorer nos services, nous pourrions utiliser les informations sous forme agrégée, assurant que la confidentialité des utilisateurs individuels reste intacte. Nous pourrions partager de telles informations agrégées avec des prestataires de services tiers."
+    },
+    "cookiePolicy": {
+      "title": "Utilisation des Cookies",
+      "title2": "Nous utilisons principalement des cookies pour :",
+      "disclaimer": "Veuillez noter que les cookies ne contiennent aucune information personnelle permettant d’identifier un utilisateur. Les utilisateurs peuvent également modifier les paramètres de leur navigateur pour désactiver la collecte de cookies. Cependant, la désactivation des cookies peut rendre de nombreux services inefficaces.",
+      "disclaimer2": "Des services de suivi et d'analyse tiers peuvent être présents sur notre site Web, y compris Google Analytics, qui nous aide à suivre l'activité des sessions, le taux de rebond et les analyses générales du trafic. Ces liens soutiennent nos services et peuvent ne pas être affiliés à nous.",
+      "thirdParty": "Services tiers utilisés",
+      "typesOfCookies": "Types de cookies",
+      "content": "Notre site utilise, collecte et stocke des cookies sur les appareils des utilisateurs. Cette politique de cookies est rédigée selon les droits de confidentialité et les droits des utilisateurs. Nous informons nos clients que leurs données peuvent être collectées et qu'ils peuvent nous contacter s'ils souhaitent faire supprimer leurs données. Un cookie est un fichier journal qui collecte certaines informations et est stocké sur l'appareil de l'utilisateur ou du visiteur. Ces informations seront renvoyées à l'appareil si l'utilisateur ou le visiteur revient. Les types de cookies les plus courants sont les cookies de session et les cookies permanents.",
+      "types": {
+        "session": "Les cookies de session sont des cookies temporaires qui sont supprimés une fois que l'utilisateur quitte le navigateur.",
+        "permanent": "Les cookies permanents restent dans le navigateur de l'utilisateur ou du visiteur jusqu'à ce qu'ils soient supprimés par l'utilisateur ou qu'ils expirent d'eux-mêmes."
+      },
+      "uses": [
+        "Comprendre comment les visiteurs arrivent sur notre site.",
+        "Surveiller l'utilisation du site par les visiteurs et le trafic.",
+        "Se souvenir de la dernière fois qu'un utilisateur a visité notre site et, si le cookie persiste, continuer la session de cet utilisateur depuis la dernière fois.",
+        "Stocker des cookies analytiques pour le suivi et l'analyse.",
+        "Suivre le comportement des utilisateurs à des fins marketing.",
+        "Faciliter la remontée d'erreurs.",
+        "Soutenir les services à la clientèle."
+      ]
+    },
+    "thirdPartyLinks": {
+      "title": "Liens Tiers",
+      "content": "Nous comptons sur des plateformes tierces pour fournir nos services, principalement pour stocker et héberger nos données. Veuillez noter que nous pourrions passer à des plateformes alternatives si nous trouvons de meilleures options. À l'exception du partage de certaines de nos données avec des partenaires de plateformes tierces, nous ne partagerons, ne louerons ni ne vendrons aucune information personnelle des utilisateurs à un tiers (sauf si la loi l'exige).",
+      "services": [
+        "Google Analytics pour le suivi des activités sur le site.",
+        "Stripe pour le traitement des paiements.",
+        "Engagebay pour les abonnements, les ventes et le service client."
+      ],
+      "note": "Nous ne collectons ni ne stockons les informations recueillies par ces services. Les données personnelles des utilisateurs restent sécurisées et nous ne sommes pas responsables de l'utilisation non autorisée des données par des plateformes tierces."
+    }
+  },
+  "aboutUs": {
+    "headline": "À propos d'Impactoverse",
+    "subtitle": "Ensemble, nous favorisons le changement.",
+    "focusArea": "Notre domaine d'intervention",
+    "engagement": "Engagement",
+    "engagementNote": "Favoriser une participation active pour susciter des discussions significatives et bâtir une communauté solidaire pour un impact social positif.",
+    "awareness": "Sensibilisation",
+    "awarenessNote": "Fournir des connaissances et des informations pour permettre aux individus de mieux comprendre les défis sociétaux et les opportunités de changement.",
+    "connection": "Connexion",
+    "connectionNote": "Rassembler les gens pour créer des réseaux qui inspirent la collaboration et les efforts collectifs pour un avenir meilleur.",
+    "action": "Action",
+    "actionNote": "Encourager des initiatives concrètes pour transformer la sensibilisation en changements significatifs pour la communauté et au-delà.",
+    "getInvolved": "Participez",
+    "ourMission": "Notre mission",
+    "ourMissionNote": "Être à l'avant-garde de l'innovation technologique pour engager, éduquer, inspirer et responsabiliser les citoyens du monde à relever ensemble les défis environnementaux et sociaux pressants.",
+    "ourVision": "Notre vision",
+    "vision1": "Créer une plateforme à l'intersection du profit et de la mission, où la technologie et la créativité convergent pour générer des résultats positifs concrets pour les personnes, la planète et les organisations alignées sur l'impact.",
+    "vision2": "Construire une plateforme transformative où l'innovation et l'empathie s'unissent pour permettre aux individus, organisations et communautés de parvenir à une croissance durable et un impact significatif pour un avenir meilleur.",
+    "advisor": "Rencontrez nos conseillers",
+    "joinOurMission": "Rejoignez notre mission"
+  },
+  "forgotPassword": {
+    "heading": "Mot de passe oublié",
+    "subtitle": "Réinitialisez votre mot de passe et retrouvez l'accès.",
+    "email": "Email",
+    "sendOtp": "Envoyer le code OTP",
+    "otp": "Code OTP",
+    "newPassword": "Nouveau mot de passe",
+    "reset": "Réinitialiser le mot de passe",
+    "resendOtp": "Renvoyer le code OTP",
+    "success": "Succès !",
+    "successSubtitle": "Votre mot de passe a été réinitialisé. Vous pouvez maintenant vous connecter avec votre nouveau mot de passe.",
+    "login": "Aller à la connexion"
+  }
+}
